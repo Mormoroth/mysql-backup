@@ -2,7 +2,7 @@
 export WORK_DIR="/root/mysql-backups"
 export USERNAME=root
 export PASSWORD=PWrootPassWordPW
-export DATE=$(date +%Y-%m-%d)
+export DATE=$(date +%Y-%m-%d-%H-%M)
 export BACKUP_DIR="/root/mysql-backups/backups/"
 mkdir -p $WORK_DIR $BACKUP_DIR
 innobackupex --user=$USERNAME --password=$PASSWORD --no-timestamp --stream=tar $BACKUP_DIR > ${BACKUP_DIR}${DATE}.tar.gz 2> ${WORK_DIR}/log.txt
