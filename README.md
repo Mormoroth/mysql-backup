@@ -1,2 +1,1 @@
-# mysql-backup
-
+# Mysql Full backup and restore using innobackupex
