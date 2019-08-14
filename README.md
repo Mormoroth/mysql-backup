@@ -48,7 +48,7 @@ Now we should apply logs.
 innobackupex --use-memory=2G --apply-log /root/restore
 ```
 It will show you **innobackupex: completed OK!** if process is compeleted as planned.
-Restoration will copy data to you *datadir* in your **my.cnf**
+Restoration will copy data to you **datadir** in your **my.cnf**
 To start restoration run:
 ```bash
 innobackupex --copy-back /root/restore
